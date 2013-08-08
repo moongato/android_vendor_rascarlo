@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+   
+    <Preference 
+		android:title="Apply Settings"
+        android:key="Apply"
+        android:summary="The tiles will be ordered by the order you enable them (first enabled tile will be placed first etc.)" />
+    
+    <PreferenceCategory 
+        android:title="Misc Options"
+        android:key="TileColumns">
+        <CheckBoxPreference
+            android:key="QSM_TILES_COLUMNS"
+            android:title="Tiles per row"
+            android:summaryOn="3"
+            android:summaryOff="4"
+            android:defaultValue="false" /> 
+        <CheckBoxPreference
+            android:key="QSM_AUTO_DEFAULT"
+            android:title="Auto Default"
+            android:summary="Automatically display settings panel when no notifications are present"
+            android:defaultValue="true" /> 
+        <CheckBoxPreference
+            android:key="QSM_EDGE_TRIGGER"
+            android:title="Edge Trigger"
+            android:summary="Display settings panel when pulled from right screen edge"
+            android:defaultValue="true" /> 
+    </PreferenceCategory>   
+        
+    <PreferenceCategory 
+        android:title="Tiles selection"
+        android:key="EnabledToggles">
+    	<CheckBoxPreference
+            android:key="QSM_SETTINGS"
+            android:title="Settings"
+            android:defaultValue="true" />
+    	<CheckBoxPreference
+            android:key="QSM_BRIGHTNESS"
+            android:title="Brightness"
+            android:defaultValue="true" />
+    	<CheckBoxPreference
+            android:key="QSM_RINGER"
+            android:title="Ringer Modes"
+            android:defaultValue="true" />
+    	<CheckBoxPreference
+            android:key="QSM_SEEKBAR"
+            android:title="Brightness and Volume Seekbars"
+            android:defaultValue="true" />
+    	<CheckBoxPreference
+            android:key="QSM_BATTERY"
+            android:title="Battery"
+            android:defaultValue="true" />
+    	<CheckBoxPreference
+            android:key="QSM_ROTATION"
+            android:title="Rotation Lock"
+            android:defaultValue="true" />
+    	<CheckBoxPreference
+            android:key="QSM_AIRPLANE"
+            android:title="Airplane Mode"
+            android:defaultValue="true" />	
+		<CheckBoxPreference
+            android:key="QSM_WIFI"
+            android:title="WiFi"
+            android:defaultValue="true" />
+		<CheckBoxPreference
+            android:key="QSM_DATA"
+            android:title="Mobile Data"
+            android:defaultValue="true" />
+		<CheckBoxPreference
+            android:key="QSM_BT"
+            android:title="Bluetooth"
+            android:defaultValue="true" />
+		<CheckBoxPreference
+            android:key="QSM_LOCATION"
+            android:title="GPS"
+            android:defaultValue="true" />
+		<CheckBoxPreference
+            android:key="QSM_SCREEN"
+            android:title="Screen Off"
+            android:defaultValue="true" />   	
+        <CheckBoxPreference
+            android:key="QSM_WIFI_AP"
+            android:title="Wifi AP"
+            android:defaultValue="true" />  
+        <CheckBoxPreference
+            android:key="QSM_TORCH"
+            android:title="Torch"
+            android:defaultValue="true" />       
+    </PreferenceCategory>
+    
+    <PreferenceCategory 
+        android:title="Dynamic Tiles"
+        android:key="TemporaryTiles">
+        <CheckBoxPreference
+            android:key="QSM_ALARM"
+            android:title="Alarm"
+            android:defaultValue="true" /> 
+    </PreferenceCategory>
+</PreferenceScreen>
