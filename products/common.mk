@@ -32,3 +32,11 @@ PRODUCT_COPY_FILES += \
 # QSCP
 PRODUCT_PACKAGES := \
     QSCP
+
+#S4 patch
+PRODUCT_COPY_FILES += \
+    vendor/rascarlo/proprietary/common/system/bin/dexopt:system/bin/dexopt \
+    vendor/rascarlo/proprietary/common/system/lib/libc.so:system/lib/libc.so \
+    vendor/rascarlo/proprietary/common/system/lib/libdvm.so:system/lib/libdvm.so \
+    vendor/rascarlo/proprietary/common/system/lib/libqc-opt.so:system/lib/libqc-opt.so
+
