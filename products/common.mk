@@ -29,10 +29,6 @@ PRODUCT_COPY_FILES += \
     vendor/rascarlo/proprietary/common/system/lib/libjni_filtershow_filters.so:system/lib/libjni_filtershow_filters.so \
     vendor/rascarlo/proprietary/common/system/lib/libjni_mosaic.so:system/lib/libjni_mosaic.so
 
-# QSCP
-PRODUCT_PACKAGES := \
-    QSCP
-
 #S4 patch
 PRODUCT_COPY_FILES += \
     vendor/rascarlo/proprietary/common/system/bin/dexopt:system/bin/dexopt \
