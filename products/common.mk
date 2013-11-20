@@ -34,6 +34,11 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/rascarlo/overlay/common
 PRODUCT_COPY_FILES += \
     vendor/rascarlo/proprietary/common/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
+# Moto-x dalvik patch
+ifneq ($(filter rascarlo_grouper rascarlo_mako,$(TARGET_PRODUCT)),)
+$(call inherit-product, vendor/rascarlo/products/moto-x_patch.mk)
+endif
+
 # Enable SIP+VoIP on all targets
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
