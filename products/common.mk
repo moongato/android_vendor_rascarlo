@@ -20,11 +20,9 @@ PRODUCT_PACKAGES += \
     Launcher3
 endif
 
-# Overlays common to all devices with telephony
-ifeq ($(filter rascarlo_mako rascarlo_hammerhead,$(TARGET_PRODUCT)),)
-# Build SimToolKit
-PRODUCT_PACKAGES += \
-    Stk
+# STK: overlay common to all devices with telephony
+ifneq ($(filter rascarlo_mako rascarlo_hammerhead,$(TARGET_PRODUCT)),)
+-include vendor/rascarlo/products/common_telephony.mk
 endif
 
 # Common overlay
