@@ -18,6 +18,9 @@ ifeq ($(TARGET_BUILD_VARIANT),user)
 # Build Launcher 3
 PRODUCT_PACKAGES += \
     Launcher3
+# Auto-rotate
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/rascarlo/overlay/Launcher3
 endif
 
 # STK: overlay common to all devices with telephony
