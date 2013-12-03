@@ -38,7 +38,7 @@ PRODUCT_COPY_FILES += \
     vendor/rascarlo/proprietary/common/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
 
 # Moto-x dalvik patch
-ifneq ($(filter rascarlo_grouper rascarlo_mako,$(TARGET_PRODUCT)),)
+ifneq ($(filter rascarlo_mako,$(TARGET_PRODUCT)),)
 $(call inherit-product, vendor/rascarlo/products/moto-x_patch.mk)
 endif
 
