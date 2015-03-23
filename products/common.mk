@@ -39,3 +39,9 @@ endif
 # Latin IME lib
 PRODUCT_COPY_FILES += \
     vendor/rascarlo/proprietary/common/system/lib/libjni_latinime.so:system/lib/libjni_latinime.so
+
+# Backuptool support
+PRODUCT_COPY_FILES += \
+    vendor/rascarlo/prebuilts/common/system/addon.d/50-rastapop.sh:system/addon.d/50-rastapop.sh \
+    vendor/rascarlo/prebuilts/common/system/bin/backuptool.functions:system/bin/backuptool.functions \
+    vendor/rascarlo/prebuilts/common/system/bin/backuptool.sh:system/bin/backuptool.sh
