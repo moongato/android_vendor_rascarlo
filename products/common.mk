@@ -16,7 +16,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-filter=everything
     
 # Launcher3 supported devices
-ifneq ($(filter rascarlo_hammerhead rascarlo_mako rascarlo_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter rascarlo_hammerhead rascarlo_mako,$(TARGET_PRODUCT)),)
 PRODUCT_PACKAGES += \
     Launcher3
 # Auto-rotate
@@ -32,7 +32,7 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.software.sip.voip.xml:system/etc/permissions/android.software.sip.voip.xml
 
 # STK: overlay common to all devices with telephony
-ifneq ($(filter rascarlo_hammerhead rascarlo_mako rascarlo_shamu,$(TARGET_PRODUCT)),)
+ifneq ($(filter rascarlo_hammerhead rascarlo_mako,$(TARGET_PRODUCT)),)
 # Build SimToolKit
 PRODUCT_PACKAGES += \
     Stk
